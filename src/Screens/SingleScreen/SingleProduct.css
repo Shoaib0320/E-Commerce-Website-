@@ -1,0 +1,159 @@
+/* SingleProduct.css */
+.single-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 20px;
+  background-color: #1a1a1a; /* Dark background */
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow for premium feel */
+}
+
+.single-product-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(255, 204, 0, 0.3); /* Soft gold shadow */
+  background-color: #222; /* Dark content background */
+  border-radius: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.single-product-image {
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px; /* Rounded corners */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-basis: 40%;
+}
+
+.single-product-image:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 10px 30px rgba(255, 204, 0, 0.5); /* Soft gold glow on hover */
+}
+
+.single-product-content > div {
+  flex: 1; 
+  min-width: 250px; /* Minimum width for better mobile support */
+}
+
+.single-product h1 {
+  font-size: 32px; /* Modern, larger heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Gold accent for premium look */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.single-product p {
+  font-size: 18px;
+  color: #ccc; /* Light grey text for contrast */
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.single-product-price {
+  font-size: 28px;
+  color: #ffcc00; /* Gold accent for price */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.single-product-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 50px; /* Rounded pill-shaped button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 8px 15px rgba(255, 107, 107, 0.4);
+}
+
+.single-product-btn:hover {
+  background-color: #ff4040;
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.6);
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.quantity-controls p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .single-product {
+      margin: 10px !important; /* Maintain spacing on smaller screens */
+      padding: 20px !important; /* Adjust padding */
+  }
+
+  .single-product-content {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center text */
+      gap: 20px;
+  }
+
+  .single-product-image {
+      max-width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space below the image */
+  }
+
+  .single-product h1 {
+      font-size: 28px; /* Reduce heading size */
+  }
+
+  .single-product p {
+      font-size: 16px; /* Adjust paragraph size */
+  }
+
+  .single-product-price {
+      font-size: 24px; /* Adjust price size */
+  }
+
+  .single-product-btn {
+      font-size: 16px; /* Adjust button font size */
+      padding: 10px 20px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .single-product {
+      padding: 20px; /* Less padding for mobile */
+  }
+
+  .single-product h1 {
+      font-size: 24px; /* Further reduce heading size */
+  }
+
+  .single-product p {
+      font-size: 14px; /* Further reduce paragraph size */
+  }
+
+  .single-product-price {
+      font-size: 20px; /* Further adjust price size */
+  }
+
+  .single-product-btn {
+      font-size: 16px; /* Further adjust button font size */
+      padding: 8px 15px; /* Further adjust button padding */
+  }
+}

@@ -1,0 +1,155 @@
+/* VIP AddToCart.css */
+.add-to-cart {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(255, 204, 0, 0.2); /* Softer gold shadow */
+    background-color: #1a1a1a; /* Dark, sleek background */
+    font-family: 'Poppins', sans-serif; /* Premium modern font */
+    color: #f4f4f4; /* Light text for contrast */
+}
+
+.add-to-cart h1 {
+    text-align: center;
+    color: #ffcc00; /* Gold color for VIP look */
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Larger, elegant heading */
+    font-weight: bold;
+    text-transform: uppercase; /* All caps for emphasis */
+    letter-spacing: 1.2px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 12px; /* More rounded corners for a smooth finish */
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #2e2e2e; /* Rich dark background for items */
+    box-shadow: 0 15px 40px rgba(255, 204, 0, 0.15); /* Gold glow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smoother transition */
+}
+
+.cart-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 25px 70px rgba(255, 204, 0, 0.35); /* Enhanced gold shadow */
+}
+
+.cart-item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 20px; /* Increase gap for more premium spacing */
+}
+
+.cart-item-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px; /* Slightly more rounded corners */
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3); /* Gold glow around image */
+    transition: transform 0.3s ease;
+}
+
+.cart-item-image:hover {
+    transform: scale(1.05); /* Gentle zoom on hover */
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Consistent spacing */
+}
+
+.cart-item-info h2 {
+    font-size: 1.4rem; /* Increased size for premium look */
+    color: #ffcc00; /* Gold for titles */
+    margin: 0 0 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cart-item-info p {
+    color: #bfbfbf; /* Softer grey for secondary text */
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6; /* Better readability */
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 18px;
+    margin-top: 25px;
+    background-color: #e74c3c; /* Bold red button for prominence */
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* Fully rounded button */
+    font-size: 1.2rem; /* Larger font size for a VIP feel */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.5); /* Red shadow */
+}
+
+.checkout-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 15px 35px rgba(231, 76, 60, 0.7); /* Enhanced shadow */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .add-to-cart {
+        padding: 20px;
+    }
+
+    .add-to-cart h1 {
+        font-size: 2rem; /* Slightly smaller for smaller screens */
+    }
+
+    .cart-item {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .cart-item-image {
+        width: 100px;
+        height: 100px; /* Adjust image size for smaller screens */
+    }
+
+    .cart-item-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .checkout-btn {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-to-cart h1 {
+        font-size: 1.8rem;
+    }
+
+    .cart-item {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .cart-item-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .checkout-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
